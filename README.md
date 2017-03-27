@@ -10,8 +10,10 @@
 
 * LCD Code
   * Modified and created our own version of the competition includes in order to start LCD tasks during Disable/Driver/Auto
-  * Created LCD selection task that is active when the robot is disabled (This does not require a user to confirm the auto and does not block startup)
+  * Created LCD autonomous selection task that is active when the robot is disabled (This does not require a user to confirm the auto and does not block startup)
     * nLCDButtons changes the autoMode global variable
     * Debouncing on nLCDButtons 
     * Utilized string array to display auto names based on autoMode variable
     * Case statement to run the correct autonomous based on autoMode variable
+
+* Using #include to organize and prevent the main file from becoming impossible to navigate
